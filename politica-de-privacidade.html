@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — Para Quem Tem Pressa</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 650 650'><rect width='650' height='650' fill='%23111111'/><circle cx='325' cy='390' r='200' fill='none' stroke='%23FFFFFF' stroke-width='52'/><rect x='260' y='60' width='130' height='65' rx='16' fill='%23FFFFFF'/><rect x='298' y='118' width='54' height='55' fill='%23FFFFFF'/><rect x='120' y='178' width='58' height='32' rx='9' fill='%23FFFFFF' transform='rotate(35 149 194)'/><rect x='468' y='178' width='58' height='32' rx='9' fill='%23FFFFFF' transform='rotate(-35 497 194)'/><polyline points='205,405 295,510 480,290' fill='none' stroke='%23C8181C' stroke-width='62' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+<style>
+  :root {
+    --vermelho: #C8181C;
+    --preto:    #111111;
+    --carvao:   #1E1E1E;
+    --branco:   #FFFFFF;
+    --cinza-cl: #F5F4F2;
+    --cinza-tx: #6B6B67;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--preto);
+    color: var(--branco);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.7;
+  }
+
+  /* ─── NAVBAR ─── */
+  nav {
+    background: rgba(17,17,17,0.97);
+    border-bottom: 1px solid rgba(200,24,28,0.3);
+    padding: 0 clamp(20px, 5vw, 60px);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  .nav-logo svg { height: 36px; width: auto; }
+
+  .nav-voltar {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: var(--cinza-tx);
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: color 0.18s;
+  }
+
+  .nav-voltar:hover { color: var(--branco); }
+
+  /* ─── CONTEÚDO ─── */
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 48px);
+  }
+
+  .doc-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--vermelho);
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: clamp(28px, 5vw, 40px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .doc-meta {
+    font-size: 13px;
+    color: var(--cinza-tx);
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  h2 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    color: var(--branco);
+  }
+
+  p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 16px;
+  }
+
+  ul {
+    margin: 0 0 16px 20px;
+    font-size: 15px;
+    color: rgba(255,255,255,0.82);
+  }
+
+  ul li { margin-bottom: 8px; }
+
+  a {
+    color: var(--vermelho);
+    text-decoration: none;
+  }
+
+  a:hover { text-decoration: underline; }
+
+  .placeholder {
+    background: rgba(200,24,28,0.15);
+    border: 1px dashed var(--vermelho);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: var(--vermelho);
+    font-weight: 600;
+  }
+
+  /* ─── FOOTER ─── */
+  footer {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 28px clamp(20px, 5vw, 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-info {
+    font-size: 12px;
+    color: var(--cinza-tx);
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-logo" aria-label="Para Quem Tem Pressa — Página inicial">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 650" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <rect width="650" height="650" fill="#111111"/>
+      <circle cx="325" cy="390" r="200" fill="none" stroke="#FFFFFF" stroke-width="52"/>
+      <rect x="260" y="60" width="130" height="65" rx="16" fill="#FFFFFF"/>
+      <rect x="298" y="118" width="54" height="55" fill="#FFFFFF"/>
+      <rect x="120" y="178" width="58" height="32" rx="9" fill="#FFFFFF" transform="rotate(35 149 194)"/>
+      <rect x="468" y="178" width="58" height="32" rx="9" fill="#FFFFFF" transform="rotate(-35 497 194)"/>
+      <polyline points="205,405 295,510 480,290" fill="none" stroke="#C8181C" stroke-width="62" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <a href="/" class="nav-voltar">← Voltar ao site</a>
+</nav>
+
+<main>
+
+  <p class="doc-tag">Documento legal</p>
+  <h1>Política de Privacidade</h1>
+  <p class="doc-meta">Última atualização: abril de 2026 &nbsp;|&nbsp; paraquemtempressa.com.br</p>
+
+  <h2>1. Responsável pelo tratamento</h2>
+  <p>
+    Esta página é operada por <span class="placeholder">[RAZÃO SOCIAL DO MEI]</span>,
+    inscrita no CNPJ sob o n.º <span class="placeholder">[XX.XXX.XXX/XXXX-XX]</span>.
+    Para entrar em contato:
+    <a href="mailto:contato@paraquemtempressa.com.br">contato@paraquemtempressa.com.br</a>.
+  </p>
+
+  <h2>2. Quais dados coletamos</h2>
+  <p>Este site coleta dados por dois meios:</p>
+  <ul>
+    <li>
+      <strong>Pixel Meta (Facebook/Instagram):</strong> ao visitar esta página, o Pixel registra
+      informações de navegação — como páginas visitadas, ações realizadas e dados do dispositivo —
+      e as associa ao seu perfil nas plataformas Meta, caso você esteja conectado. Essa coleta é
+      automática e ocorre independentemente de qualquer interação com formulários.
+    </li>
+    <li>
+      <strong>Plataforma Kiwify (checkout):</strong> ao realizar uma compra, você fornece dados
+      diretamente à Kiwify — nome, e-mail, CPF e dados de pagamento. Esses dados são tratados
+      pela Kiwify conforme a política de privacidade própria da plataforma, disponível em
+      <a href="https://kiwify.com.br" target="_blank" rel="noopener">kiwify.com.br</a>.
+    </li>
+  </ul>
+
+  <h2>3. Para que usamos os dados</h2>
+  <ul>
+    <li>Veiculação de anúncios pagos nas plataformas Meta (Facebook e Instagram)</li>
+    <li>Mensuração de desempenho das campanhas (conversões, custo por aquisição)</li>
+    <li>Criação de públicos personalizados e semelhantes para otimização de anúncios</li>
+    <li>Processamento e entrega do produto adquirido (via Kiwify)</li>
+  </ul>
+
+  <h2>4. Base legal (LGPD)</h2>
+  <p>
+    O tratamento de dados realizado por esta página tem como base legal o
+    <strong>legítimo interesse</strong> do responsável para fins de marketing e análise de
+    desempenho (art. 7º, IX, Lei 13.709/2018), e a <strong>execução de contrato</strong>
+    para os dados fornecidos no momento da compra (art. 7º, V).
+  </p>
+
+  <h2>5. Compartilhamento de dados</h2>
+  <p>
+    Os dados coletados via Pixel Meta são transmitidos diretamente às plataformas da Meta
+    Platforms, Inc., conforme os termos de uso e a política de dados desta empresa.
+    Os dados de compra são tratados pela Kiwify. Não vendemos nem cedemos dados pessoais
+    a terceiros fora dessas relações.
+  </p>
+
+  <h2>6. Por quanto tempo guardamos</h2>
+  <p>
+    Os dados coletados via Pixel são retidos conforme as políticas da Meta. Os dados de
+    compra são retidos pela Kiwify conforme as obrigações legais aplicáveis. Não mantemos
+    base própria de dados pessoais neste momento.
+  </p>
+
+  <h2>7. Seus direitos</h2>
+  <p>Nos termos da LGPD, você tem direito a:</p>
+  <ul>
+    <li>Confirmar a existência de tratamento dos seus dados</li>
+    <li>Acessar os dados que possuímos sobre você</li>
+    <li>Solicitar correção de dados incompletos ou incorretos</li>
+    <li>Solicitar eliminação dos dados tratados com base em consentimento</li>
+    <li>Revogar consentimento a qualquer momento</li>
+  </ul>
+  <p>
+    Para exercer qualquer desses direitos, entre em contato pelo e-mail
+    <a href="mailto:contato@paraquemtempressa.com.br">contato@paraquemtempressa.com.br</a>.
+  </p>
+
+  <h2>8. Cookies</h2>
+  <p>
+    Esta página utiliza cookies técnicos necessários ao funcionamento e cookies de rastreamento
+    associados ao Pixel Meta. Ao continuar navegando, você concorda com esse uso. Você pode
+    gerenciar ou bloquear cookies nas configurações do seu navegador, o que pode impactar
+    o funcionamento de algumas funcionalidades da página.
+  </p>
+
+  <h2>9. Alterações nesta política</h2>
+  <p>
+    Esta política pode ser atualizada a qualquer momento. A data de última atualização
+    constante no topo do documento indica a versão vigente. O uso continuado do site
+    após alterações implica concordância com os novos termos.
+  </p>
+
+  <h2>10. Contato</h2>
+  <p>
+    Dúvidas, solicitações ou reclamações relacionadas à privacidade:
+    <a href="mailto:contato@paraquemtempressa.com.br">contato@paraquemtempressa.com.br</a>
+  </p>
+
+</main>
+
+<footer>
+  <div class="footer-info">
+    CONCURSO PARA QUEM TEM PRESSA<br>
+    Língua Portuguesa — Módulo CEBRASPE
+  </div>
+  <div class="footer-info" style="text-align:right;">
+    <span class="placeholder">[RAZÃO SOCIAL DO MEI]</span> —
+    CNPJ <span class="placeholder">[XX.XXX.XXX/XXXX-XX]</span>
+  </div>
+</footer>
+
+</body>
+</html>
