@@ -728,13 +728,27 @@ src="https://www.facebook.com/tr?id=947774577976695&ev=PageView&noscript=1"
     padding: clamp(32px, 5vw, 56px) clamp(28px, 5vw, 56px);
   }
 
-  @media (max-width: 600px) {
-    .garantia-bloco {
-      flex-direction: column;
-      text-align: center;
-    }
+ /* ─── GARANTIA BLOCO (CORRIGIDO) ─── */
+  #garantia {
+    background: var(--preto);
+    padding: clamp(60px, 10vh, 100px) clamp(20px, 5vw, 60px);
+    border-top: 1px solid rgba(200,24,28,0.15);
+    border-bottom: 1px solid rgba(200,24,28,0.15);
   }
 
+  .garantia-bloco {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: clamp(32px, 6vw, 72px);
+    background: var(--carvao);
+    border: 1px solid rgba(200,24,28,0.25);
+    border-left: 4px solid var(--vermelho);
+    padding: clamp(32px, 5vw, 56px) clamp(28px, 5vw, 56px);
+  }
+
+  /* REGRAS DO SELO */
   .garantia-bloco-selo {
     flex-shrink: 0;
     width: clamp(80px, 12vw, 110px);
@@ -744,6 +758,20 @@ src="https://www.facebook.com/tr?id=947774577976695&ev=PageView&noscript=1"
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  /* AJUSTE MOBILE */
+  @media (max-width: 600px) {
+    .garantia-bloco {
+      flex-direction: column;
+      text-align: center;
+    }
+    .garantia-bloco-selo {
+      align-self: center; /* ISSO centraliza o selo quando a coluna vira vertical */
+    }
+    .garantia-bloco-desc { 
+      max-width: 100%; 
+    }
   }
 
   .garantia-bloco-titulo {
